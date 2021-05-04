@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>GANs &mdash; Rapport de veille</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/css/helpers.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="https://twitter.com/DamsoloB">#VTECL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#section-about">Principe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-why-us">Quelques applications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-practicing-areas">Considération éthique</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#section-attorneys">Attorneys</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="pb_cover_v1 text-left cover-bg-black cover-bg-opacity-4" style="background-image: url(/ecl-deepart2.jpg)" id="section-home">
+      <div class="container">
+        <div class="row align-items-center justify-content-end">
+          <div class="col-md-8  order-md-1">
+
+            <h2 class="heading mb-4">Les Nouvelles applications des GANs</h2>
+            <div class="sub-heading"><p class="mb-6">Nouvelles Technologies de l'Information et de la Communication
+
+            </p>
+            <p><a href="#section-about" role="button" class="btn smoothscroll pb_outline-light btn-xl pb_font-13 p-4 rounded-0 pb_letter-spacing-2">En savoir plus</a></p>
+            </div>
+            
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+    
+    
+    <section class="pb_section pb_section_v1" data-section="about" id="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 pr-md-5 pr-sm-0">
+            <h2 class="mt-0 heading-border-top mb-3 font-weight-normal">Qu'est ce qu'un GAN ?</h2>
+            <p>GAN veut dire Generative Adversarial Network, cela correpond à un architecture particulière d'algorithme de machine learning qui peut être synthétiser par ce schéma, composée de deux éléments :</p>
+            <ul>
+              <li >un générateur qui produit des élément appartent à un set de données (typiquement des images) à partir de vecteurs aléatoires d'un espace latent</li>
+              <li >un discriminateur à qui l'on présente à la fois des éléments réels et des "faux" créés pas le générateur, son but et classifier le faux du vrai</li>
+            </ul>
+            
+          </div>
+          <div class="col-lg-7"> 
+            <div class="images" >
+              <img class="img1 img-fluid" src="schema_gan.png" >
+              <p>source : https://openclassrooms.com/
+              </p>
+              <p>Le générateur et le discriminateur sont entraînés de manière conjointe, le générateur étant récompensé lorsqu'il trompe le discriminateur et ce dernier lorsqu'il classe correctement le vrai du faux.</p>
+              <p>Plus d'information disponibles sur <a href="https://fr.wikipedia.org/wiki/R%C3%A9seaux_antagonistes_g%C3%A9n%C3%A9ratifs">Wikipédia</a></p>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>  
+    </section>
+    <!-- END section -->
+
+    <section class="pb_section pb_section_v1 bg-light" data-section="about" id="section-why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 pr-md-5 pr-sm-0">
+            <h2 class="mt-0 heading-border-top mb-3 font-weight-normal">Quelques applications</h2>
+            <p>Historiquement les GANs ont été utilisés pour générer des photos réalistes, un exemple marquant est celui de figures humaines :</p>
+            <p>Cette personne n'existe pas vraiment, elle a été générées par le site <a href="thispersondoesnotexist.com">thispersondoesnotexist.com</a> qui repose sur l'algorithme : StyleGAN2 (Dec 2019) - Karras et al. and Nvidia </p>
+
+
+
+            
+          </div>
+          <div class="col-lg-7">
+            <div class="images">
+              <img class="img-thumbnail img-fluid" src="person_gan.jfif" style="width:50%" >
+              <p>source : thispersondoesnotexist.com
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-lg-5 pr-md-5 pr-sm-0" style="display:flex;align-items: center;justify-content: center;">
+            <p>Un autre exemple historique est celui d'application de styles à des images. Ici différents styles ont été appliqués en utilisant le site <a href="deepart.io">deepart.io</a>.</p>
+
+            
+          </div>
+          <div class="col-lg-7">
+            <div class="images">
+              <img class="img-thumbnail img-fluid" src="style_GAN.png" style="width:100%" >
+            </div>
+            <p></p>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-lg-5 pr-md-5 pr-sm-0" style="display:flex;align-items: center;justify-content: center;">
+            <p>Des <a href="https://arxiv.org/abs/1610.07584">algorithmes</a> plus récents ont permis l'application de mêmes techniques pour la générations d'objets 3D :</p>
+
+            
+          </div>
+          <div class="col-lg-7">
+            <div class="images">
+              <img class="img-thumbnail img-fluid" src="3D_GAN.png" style="width:100%" >
+            </div>
+          </div>
+          
+        </div>
+        <div class="container"style="margin-top:5rem" >
+
+            <p>Plus d'exemples sont disponible sur ma page <a href="https://wakelet.com/wake/MqV1RF2xRnJ8ixlUvDyZj">Wakelet</a>
+            </p>
+
+          
+        </div>
+
+      </div>
+  
+      
+    </section>
+
+    <section class="pb_section pb_section_v1" data-section="about" id="section-practicing-areas">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 pr-md-5 pr-sm-0">
+            <h2 class="mt-0 heading-border-top mb-3 font-weight-normal">Considération éthique</h2>
+            <p>L'algorithme <a href='https://speech2face.github.io/'>Speech2Face</a> développé par le laboratoire CSAIL du MIT à récemment fait polémique. En effet ce dernier permet de reconstruire le visage d'une personnes à partir d'un échantillon de voix. </p>
+            <p>Certaines personnes ont manifestées leur colère en attribuant des caractères racistes et transphobes à l'algorithme</p>
+            <p>Il est cependant important de noter que l'algorithme ne fait que reproduire les informations qu'il a rencontré lors de sa phase d'entraînement. Ainsi il n'a nullement la prétention de pouvoir prédire le genre d'une personne mais reproduit simplement les corrélations statistiques de son jeu d'entraînement.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="images align-items-center justify-content-end">
+              <img class="img1 img-fluid" src="speech2face.png" >
+            </div>
+          </div>
+          
+        </div>
+      </div>  
+    </section>
+    
+    
+    <footer class="pb_footer bg-light" role="contentinfo">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://twitter.com/DamsoloB" class="p-2"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="pb_font-14">&copy; 2021 Par Damien Bonnet-Eymard</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- loader -->
+    <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FDA04F"/></svg></div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+	</body>
+</html>
